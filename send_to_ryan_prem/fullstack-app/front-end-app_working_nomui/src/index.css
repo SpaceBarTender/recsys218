@@ -1,0 +1,116 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Add consistent width constraints */
+  --max-width: 1200px;
+  --page-padding: 16px;
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  /* Remove centering from body */
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  /* Remove centering from root */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add layout wrapper styles */
+.layout-wrapper {
+  width: 100%;
+  min-width: 320px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  flex: 1;
+}
+
+/* Add page content wrapper styles */
+.page-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 80px; /* Space for fixed header */
+}
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  background-color: #242424;
+  border-top: 1px solid #555;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px var(--page-padding);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Additional styling for the office code select (chip) */
+.signup-select {
+  background-color: #242424; /* Dark grey matching your :root background */
+  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid #646cff; /* Optional: adds a subtle border */
+  border-radius: 4px;
+  padding: 0.5em;
+} 
